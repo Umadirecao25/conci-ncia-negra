@@ -1,0 +1,88 @@
+@charset "utf-8";
+
+body{
+    margin: 0;
+    background: #6d583d;
+    font-family: sans-serif;
+    color: #ffffff;
+}
+
+.container{
+    position: relative;
+    width: 320px;
+    margin:100px auto 0 auto ;
+    perspective: 900px;
+}
+
+.carrosel{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    animation: rotate360 40s infinite forwards linear;
+}
+.imagen{
+    position: absolute;
+    width: 290px;
+    height: 187px;
+    top: 40px;
+    left: 10px;
+    right: 10px;
+    background-size: cover;
+    display: flex;
+}
+.imagen span{
+     margin: auto;
+     font-size: 1.2em;
+     text-align: center;
+}
+
+@keyframes rotate360 {
+    from{
+        transform: rotateY(0deg);
+    }
+    to{
+        transform: rotateY(-360deg);
+    }
+}
+
+.imagen:nth-child(1){
+    background-image: url(https://img.freepik.com/fotos-premium/um-retrato-de-um-grupo-de-jovens-negros-africanos-sorrindo-e-se-divertindo-vestindo-amarelo_900173-6.jpg);
+    transform: rotateY(0deg) translateZ(430px);
+}
+.imagen:nth-child(2){
+    background-image: url(https://img.freepik.com/fotos-premium/um-retrato-de-um-grupo-de-jovens-negros-africanos-sorrindo-e-se-divertindo-vestindo-amarelo_900173-2.jpg);
+    transform: rotateY(40deg) translateZ(430px);
+}
+.imagen:nth-child(2){
+    background-image: url(https://img.freepik.com/fotos-premium/um-retrato-de-um-grupo-de-jovens-negros-africanos-sorrindo-e-se-divertindo-vestindo-amarelo_900173-2.jpg);
+    transform: rotateY(40deg) translateZ(430px);
+}
+.imagen:nth-child(3){
+    background-image: url(https://pt.unesco.org/sites/default/files/styles/img_688x358/public/courier/photos/cou_03_21_our_guest_01_web.jpg?itok=3INkrTTB);
+    transform: rotateY(80deg) translateZ(430px);
+}
+.imagen:nth-child(4){
+    background-image: url(https://rhpravoce.com.br/wp-content/uploads/2021/05/Negros-e-brancos-juntos.png);
+    transform: rotateY(120deg) translateZ(430px);
+}
+.imagen:nth-child(5){
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScaWZvu3J-MiVaajKcs1ifb_qYCh8r66hKxQ&usqp=CAU);
+    transform: rotateY(160deg) translateZ(430px);
+}
+.imagen:nth-child(6){
+    background-image: url(https://www.gov.br/secretariageral/pt-br/noticias/2023/marco/governo-articula-16-ministerios-para-reduzir-violencia-contra-jovens-negros/capajovensnegros.jpg/@@images/09ee80d3-2e11-42ad-b85f-943d8f2c6b6d.jpeg);
+    transform: rotateY(200deg) translateZ(430px);
+}
+.imagen:nth-child(7){
+    background-image: url(https://www.cmbh.mg.gov.br/sites/default/files/noticias_destaques/2021/10/fernando-frazao-agencia-brasil-1024x720.jpg);
+    transform: rotateY(240deg) translateZ(430px);
+}
+.imagen:nth-child(8){
+    background-image: url(https://imagens.brasil.elpais.com/resizer/u3LXcxQlJiPVju-Mq6IqYySxBzM=/414x0/arc-anglerfish-eu-central-1-prod-prisa.s3.amazonaws.com/public/NZVVVFQY64NRADLN5PXSB4CJ4A.jpg);
+    transform: rotateY(280deg) translateZ(430px);
+}
+.imagen:nth-child(9){
+    background-image: url(https://ims.com.br/wp-content/uploads/2020/11/Quilombhoje_retrato_1920x1080.jpg);
+    transform: rotateY(320deg) translateZ(430px);
+}
